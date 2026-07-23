@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/project/audible/
+note: >-
+  Audible operates no public developer program and ships no first-party SDK. Every
+  package below is a community project that reverse-engineers Audible's private
+  internal API. All are marked official:false; none are endorsed or supported by
+  Audible/Amazon.
+packages:
+- language: python
+  registry: pypi
+  name: audible
+  url: https://pypi.org/project/audible/
+  install: pip install audible
+  repo: https://github.com/mkb79/Audible
+  official: false
+- language: python
+  registry: pypi
+  name: audible-cli
+  url: https://pypi.org/project/audible-cli/
+  install: pip install audible-cli
+  repo: https://github.com/mkb79/audible-cli
+  official: false
+- language: crystal
+  registry: github
+  name: audible.cr
+  url: https://github.com/omarroth/audible.cr
+  install: 'shards: add audible to shard.yml'
+  repo: https://github.com/omarroth/audible.cr
+  official: false

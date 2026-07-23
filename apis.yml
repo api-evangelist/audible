@@ -1,8 +1,25 @@
 aid: audible
 name: Audible
-description: 'Audible is a company surfaced as a portfolio company of kleiner-perkins and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Audible is an Amazon-owned online audiobook, podcast, and spoken-word entertainment service.
+  It sells and streams audiobooks, Audible Originals, and podcasts through membership plans and a la carte
+  purchases, delivered via web, iOS, Android, Alexa, and Kindle apps. Audible does not operate a public
+  developer program or documented API — its catalog, library, and playback endpoints are a private
+  internal API consumed by its own first-party apps. Community projects (the mkb79/Audible Python library,
+  audible-cli, and omarroth/audible.cr) reverse-engineer that internal API; none are first-party or
+  officially supported. This profile catalogs Audible''s public web, help, and legal surface plus the
+  unofficial client ecosystem.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.audible.com/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/audible/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Audiobooks
+- Podcasts
+- Entertainment
+- Media
+- Streaming
+- Amazon
 apis: []
+common:
+- type: DomainSecurity
+  url: security/audible-domain-security.yml
+- type: Website
+  url: https://www.audible.com
+- type: Blog
+  url: https://www.audible.com/blog
+- type: Support
+  url: https://help.audible.com
+- type: HelpCenter
+  url: https://help.audible.com
+- type: TermsOfService
+  url: https://www.audible.com/legal/conditions-of-use
+- type: PrivacyPolicy
+  url: https://www.audible.com/legal/privacy-notice
+- type: Packages
+  url: packages/audible-packages.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
