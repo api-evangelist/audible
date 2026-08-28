@@ -8,6 +8,17 @@ description: 'Audible is an Amazon-owned online audiobook, podcast, and spoken-w
   audible-cli, and omarroth/audible.cr) reverse-engineer that internal API; none are first-party or
   officially supported. This profile catalogs Audible''s public web, help, and legal surface plus the
   unofficial client ecosystem.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
